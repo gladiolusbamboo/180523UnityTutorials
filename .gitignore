@@ -34,3 +34,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+Animations/
+Fonts/
+Prefabs/
+Sounds/
+Sprites/
+Textures/
