@@ -1,3 +1,0 @@
-# 180523UnityTutorials
-Unityチュートリアル学習用リポジトリ  
-素材ファイルなどはignoreしています
