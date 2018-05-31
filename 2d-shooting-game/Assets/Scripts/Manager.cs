@@ -14,14 +14,12 @@ public class Manager : MonoBehaviour
   {
     // Titleゲームオブジェクトを検索し取得する
     title = GameObject.Find("Title");
-    Debug.Log(title.activeSelf);
   }
 
   // Update is called once per frame
   void Update()
   {
     // ゲーム中ではなく、Xキーが押されたらtrueを返す
-    
     if (IsPlaying() == false && Input.GetKeyDown(KeyCode.X))
     {
       GameStart();
@@ -37,6 +35,9 @@ public class Manager : MonoBehaviour
 
   public void GameOver()
   {
+    // ハイスコアの保存
+    FindObjectOfType<Score>().Save();
+
     // ゲームオーバー時に、タイトルを表示する
     title.SetActive(true);
   }

@@ -85,7 +85,6 @@ namespace CompletedAssets
 			} else {
 				// Damageトリガーをセット
 				spaceship.GetAnimator ().SetTrigger ("Damage");
-		
 			}
 		}
 	}
